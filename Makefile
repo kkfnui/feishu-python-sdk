@@ -4,9 +4,9 @@ help:
 	@echo "    pypi"
 	@echo "        make and upload python package."
 pypi:
-	rm dist/*.tar.gz
+	rm -f dist/*.tar.gz
 	python setup.py sdist bdist_wheel
-	twine upload dist/*.tar.gz
+	# twine upload dist/*.tar.gz
 clean:
 	rm -rf build
 	rm -rf dist

@@ -15,9 +15,19 @@ TODO
 - [ ] 多写点测试, 目前coverage = 35%
 - [ ] 多实现点接口, 目前实现了机器人和消息相关
 
-## 使用说明
+## 安装说明
 
+### 本地打包
+
+```bash
+make pypi
+# 将 dist/feishu_python_sdk-{version}-py3-none-any.whl 拷贝到目标机器上
+pip install feishu_python_sdk-{version}-py3-none-any.whl
 ```
+
+## 使用公共包
+
+```bash
 pip install feishu-python-sdk
 ```
 

@@ -4,3 +4,5 @@ __pycache__/*
 env.sh
 tests/*test.py
 *.egg-info/*
+build/*
+dist/*

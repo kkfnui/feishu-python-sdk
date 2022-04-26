@@ -3,9 +3,10 @@ from .base import allow_async_call
 from .bot import BotAPI
 from .card import CardAPI
 from .message import MessageAPI
+from .spreadsheet import SpreeadSheetAPI
 
 
-class FeishuAPI(AuthAPI, MessageAPI, CardAPI, BotAPI):
+class FeishuAPI(AuthAPI, MessageAPI, CardAPI, BotAPI, SpreeadSheetAPI):
     """飞书API
 
     实现API的简单示例::
