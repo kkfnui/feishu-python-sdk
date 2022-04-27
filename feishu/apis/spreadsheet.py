@@ -30,8 +30,9 @@ class SpreeadSheetAPI(BaseAPI):
         """
         api = "/sheets/v2/spreadsheets/%s/values/%s" %(spreadsheetToken, range)
 
+        params = {"dateTimeRenderOption": "FormattedString"}
 
-        result = self.client.request("GET", api=api)
+        result = self.client.request("GET", api=api, params=params)
 
 
         return SpreadSheetOneRangeResponse(**result.get("data"))
